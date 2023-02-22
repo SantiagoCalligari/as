@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #333;
+  color: #ccc;
+  font-family: fira sans, sans-serif;
+  font-size: 20px;
+  line-height: 1.75rem;
+  scroll-behavior: smooth;
+  scrollbar-color: gray #000;
+  scrollbar-width: thin;
+}
+
+.logo {
+  display: inline-block;
+  width: 240px;
+  height: 92px;
+  background: url(./img/GarchaLinuxArgentina.png);
+  background-image: url(./img/GarchLinuxArgentina.png);
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 2vh 0.5vw;
+  color: rgba(180, 180, 180, 0.8);
+  font-size: 1rem;
+  border-bottom: 0.2px solid rgba(180, 180, 180, 0.25);
+}
+
+h3 {
+  color: #888;
+}
+
+small {
+  text-decoration-line: underline;
+  color: #444;
+}
+
+.cuerpo {
+  text-align: center;
+  padding-top: 6vh;
+  color: #bbb;
+  margin: 10vh;
+}
+.cuerpo h1 {
+  font-size: 3vh;
+  font-weight: bold;
+  color: #6bf;
+  /* Cambia el color a tu gusto */
+  text-align: center;
+}
+.cuerpo h2 {
+  color: #ccc;
+  text-decoration-line: underline;
+  margin-top: 1rem;
+}
+.cuerpo p {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.card p {
+  color: #333;
+}
+
+.navbar {
+  position: sticky;
+  position: -webkit-sticky;
+  padding: 1.25rem;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 10vh;
+  min-height: 92px;
+  align-items: center;
+  border-bottom: 2px solid #1baaff;
+  z-index: 10;
+  width: 100%;
+  background: rgba(1, 255, 235, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.navbtn {
+  color: rgba(180, 180, 180, 0.8);
+  text-decoration: none;
+  border: none;
+  padding: 0 0.75vw;
+  font-size: 1rem;
+  font-weight: 700;
+  display: table-cell;
+  height: 7vh;
+  transition: color 1s ease-out;
+  user-select: none;
+  vertical-align: middle;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1.5rem 9rem 1.5rem 9rem;
+  border-top: 2px solid rgba(100, 100, 100, 0.5);
+  text-align: left;
+  padding-bottom: 3rem;
+}
+
+.card ul {
+  color: #333;
+}
+.card ul li {
+  margin-left: 3vh;
+  margin-top: 1vh;
+}
+
+.contact {
+  padding-top: 2rem;
+}
+
+a:link {
+  color: #69f;
+}
+
+.card-wrapper {
+  margin: 3vh;
+  display: grid;
+  justify-content: center;
+  padding-left: 25%;
+  padding-right: 25%;
+  grid-row-gap: 10vh;
+}
+
+.card {
+  width: 100%;
+  background-color: #aaa;
+  border-radius: 0.5rem;
+  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+  padding-bottom: 1rem;
+  background-image: linear-gradient(var(--card-gradient), white max(9.5rem, 27vh));
+  overflow: hidden;
+}
+.card img {
+  border-radius: 0.5rem 0.5rem 0 0;
+  width: 100%;
+  object-fit: cover;
+  max-height: max(10rem, 85vh);
+  aspect-ratio: 16/9;
+  mix-blend-mode: var(--card-blend-mode);
+}
+.card img ~ * {
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+.card > :last-child {
+  margin-bottom: 0;
+}
+.card h2 {
+  text-decoration-line: underline;
+  margin-top: 0rem;
+  font-size: 1.25rem;
+  color: #222;
+  padding-bottom: 2vh;
+}
+.card:hover, .card:focus-within {
+  --card-gradient: #24a9d5 max(8.5rem, 20vh);
+}
+
+/* Additional demo display styles */
+@media (max-width: 1300px) {
+  .cuerpo {
+    padding-left: 3vh;
+    padding-right: 3vh;
+    margin: 0;
+    padding-bottom: 1vh;
+  }
+  .cuerpo h1 {
+    font-family: "Cinzel Decorative", cursive;
+  }
+  .cuerpo p {
+    text-align: justify;
+    text-justify: auto;
+    padding-top: 3vh;
+  }
+
+  .card-wrapper {
+    justify-content: center;
+    padding-left: 7%;
+    padding-right: 0%;
+    grid-row-gap: 5vh;
+  }
+
+  .card {
+    width: 90%;
+    font-size: 0.8rem;
+  }
+
+  .card h2 {
+    font-size: 2.3rem;
+    padding-bottom: 2vh;
+    margin-left: 1.5vh;
+    padding-bottom: 2vh;
+    padding-top: 1vh;
+  }
+
+  .card li {
+    margin-left: 3vh;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 1.5rem;
+    border-top: 2px solid rgba(100, 100, 100, 0.5);
+    text-align: left;
+    padding-bottom: 3rem;
+  }
+
+  .contact {
+    padding-top: 2rem;
+  }
+
+  .navbtn {
+    color: rgba(180, 180, 180, 0.8);
+    text-decoration: none;
+    border: none;
+    padding: 0 0.75vw;
+    font-size: 2rem;
+    font-weight: 700;
+    height: 7vh;
+    transition: color 1s ease-out;
+    user-select: none;
+  }
+
+  .contact {
+    font-size: 2rem;
+    margin-bottom: 1vh;
+    margin-top: 3vh;
+  }
+
+  a {
+    font-size: 2rem;
+  }
+}

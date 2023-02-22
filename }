@@ -1,0 +1,66 @@
+use yew::prelude::*;
+
+//TODO: Card Container
+fn card(cuerpo: String, Titulo: String, Imagen: String) -> Html {
+    html! {
+  <li class="card">
+    <img src={Imagen}/>
+    <h2>{Titulo}</h2>
+    <p>{cuerpo}</p>
+      </li>
+    }
+}
+
+fn navbar() -> Html {
+    html! {
+        <div class="navbar">
+            <a href="index.html" class="logo"/>
+            <span>
+            <a href="downloads.html" class="navbtn">{"Downloads"}</a>
+            <a href="about.html" class="navbtn">{"About"}</a>
+            </span>
+        </div> 
+    }
+}
+fn requeriments() {
+    html! {
+      <li class="card">
+        <img src={Imagen}/>
+        <h2>{Titulo}</h2>
+        <p>{cuerpo}</p>
+          </li>
+    }
+
+}
+
+
+fn footer() -> Html {
+    html! {
+        <div class="footer-container">
+            <div class="footer">
+                <div class="redes">
+                    <h3 class="contact">{"Contact Me"}</h3>
+                    <a href="mailto:santiago@calligari.ar">{"santiago@garchlinux.ar"}</a>
+                </div>
+            </div>
+        </div>
+    }
+}
+
+#[function_component]
+fn App() -> Html {
+    html!{
+        <>
+            {navbar()}
+            <ul class="card-wrapper">
+            {card(String::from("Because Garchlinux offers a streamlined and personalized experience, with a carefully selected KDE desktop environment and pre-installed packages. Choose Garch for its robust and flexible platform, easy installation."), String::from("Why Garch"), String::from("img/GarchLinuxBootEntry.png"))}
+            {card(String::from("Que"), String::from("Reque"), String::from("img/GarchaLinuxArgentina.png"))}
+            </ul>
+            {footer()}
+        </>
+    }
+}
+
+fn main() {
+    yew::Renderer::<App>::new().render();
+}
