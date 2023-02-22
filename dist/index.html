@@ -1,41 +1,14 @@
 <!DOCTYPE html><html><head>
         <meta charset="utf-8">
         <title>GarchLinux</title>
-        <link rel="stylesheet" href="/styles-68530070c7c79d5a.css">
+        <link rel="stylesheet" href="/styles-915d9d360fe34758.css">
         
         <link rel="shortcut icon" href="img/favicon.ico">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&amp;display=swap" rel="stylesheet">
     
-<link rel="preload" href="/garchlinux-9702610fc29a5df7_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/garchlinux-9702610fc29a5df7.js"></head>
+<link rel="preload" href="/garchlinux-1d602fd7694aa13f_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/garchlinux-1d602fd7694aa13f.js"></head>
 <body>
-<script type="module">import init from '/garchlinux-9702610fc29a5df7.js';init('/garchlinux-9702610fc29a5df7_bg.wasm');</script><script>(function () {
-    var protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-    var url = protocol + '//' + window.location.host + '/_trunk/ws';
-    var poll_interval = 5000;
-    var reload_upon_connect = () => {
-        window.setTimeout(
-            () => {
-                // when we successfully reconnect, we'll force a
-                // reload (since we presumably lost connection to
-                // trunk due to it being killed, so it will have
-                // rebuilt on restart)
-                var ws = new WebSocket(url);
-                ws.onopen = () => window.location.reload();
-                ws.onclose = reload_upon_connect;
-            },
-            poll_interval);
-    };
-
-    var ws = new WebSocket(url);
-    ws.onmessage = (ev) => {
-        const msg = JSON.parse(ev.data);
-        if (msg.reload) {
-            window.location.reload();
-        }
-    };
-    ws.onclose = reload_upon_connect;
-})()
-</script></body></html>
+<script type="module">import init from '/garchlinux-1d602fd7694aa13f.js';init('/garchlinux-1d602fd7694aa13f_bg.wasm');</script></body></html>
