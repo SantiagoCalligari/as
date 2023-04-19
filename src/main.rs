@@ -24,7 +24,7 @@ fn navbar() -> Html {
         <div class="navbar">
             <a href="index.html" class="logo"/>
             <span>
-            <a href="downloads.html" class="navbtn">{"Downloads"}</a>
+            <a href="https://github.com/SantiagoCalligari/GarchLinux/tags" target="_blank" class="navbtn">{"Downloads"}</a>
             </span>
         </div> 
     }
@@ -49,15 +49,22 @@ fn requeriments() -> Html {
 
 
 fn footer() -> Html {
-    html! {
+    html! {<>
         <div class="footer-container">
             <div class="footer">
                 <div class="redes">
                     <h3 class="contact">{"Contact Me"}</h3>
                     <a href="mailto:santiago@calligari.ar">{"santiago@garchlinux.ar"}</a>
                 </div>
+                <div class="redes">
+                    <h3 class="contact">{"Buy me a mate 🧉"}</h3>
+                    <a href="https://link.mercadopago.com.ar/garchlinux">{"Here!"}</a>
+                </div>
+
+
             </div>
         </div>
+    </>
     }
 }
 

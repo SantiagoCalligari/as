@@ -105,12 +105,13 @@ small {
 .footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     margin: 1.5rem 9rem 1.5rem 9rem; 
     border-top: 2px solid rgba(100,100,100,0.5);
     text-align: left;
     padding-bottom: 3rem;
+    font-size: 0.5rem;
 } 
+
 .card ul {
       color: #333;
       li {
@@ -233,7 +234,7 @@ a:link {
   .footer {
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: space-between;
     margin: 1.5rem; 
     border-top: 2px solid rgba(100,100,100,0.5);
     text-align: left;
@@ -260,6 +261,9 @@ a:link {
    }
 a {
     font-size: 2rem;
+}
+a:visited {
+    color: #69f;
 }
 }
 
